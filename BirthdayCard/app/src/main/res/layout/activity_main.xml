@@ -10,7 +10,7 @@
         android:id="@+id/party_image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="center"
+        android:scaleType="centerCrop"
         android:src="@drawable/androidparty"
         />
 
@@ -20,7 +20,7 @@
         android:textSize="36sp"
         android:textColor="#FFFF"
         android:fontFamily="sans-serif-light"
-        android:text="Happy Birthday Lola!"
+        android:text="Happy Birthday, Lola!"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -30,5 +30,5 @@
         android:textSize="36sp"
         android:textColor="#FFFF"
         android:fontFamily="sans-serif-light"
-        android:text="Love Dad!"/>
+        android:text="Love, Dad!"/>
 </RelativeLayout>
