@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:textSize="36sp"
         android:textColor="#FFFF"
+        android:fontFamily="sans-serif-light"
         android:text="Happy Birthday Lola!"
         />
     <TextView
@@ -28,5 +29,6 @@
         android:layout_alignParentRight="true"
         android:textSize="36sp"
         android:textColor="#FFFF"
+        android:fontFamily="sans-serif-light"
         android:text="Love Dad!"/>
 </RelativeLayout>
