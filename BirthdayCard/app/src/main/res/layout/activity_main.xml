@@ -20,6 +20,7 @@
         android:textSize="36sp"
         android:textColor="#FFFF"
         android:fontFamily="sans-serif-light"
+        android:layout_margin="20dp"
         android:text="Happy Birthday, Lola!"
         />
     <TextView
@@ -30,5 +31,6 @@
         android:textSize="36sp"
         android:textColor="#FFFF"
         android:fontFamily="sans-serif-light"
+        android:layout_margin="20dp"
         android:text="Love, Dad!"/>
 </RelativeLayout>
