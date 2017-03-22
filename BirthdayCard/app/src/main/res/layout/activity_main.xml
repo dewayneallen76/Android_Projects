@@ -10,12 +10,15 @@
         android:id="@+id/party_image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scaleType="center"
         android:src="@drawable/androidparty"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textColor="#FFFF"
         android:text="Happy Birthday Lola!"
         />
     <TextView
@@ -23,5 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:textSize="36sp"
+        android:textColor="#FFFF"
         android:text="Love Dad!"/>
 </RelativeLayout>
