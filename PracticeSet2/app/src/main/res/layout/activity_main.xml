@@ -8,7 +8,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context=".MainActivity">
+    tools:context="com.example.android.practiceset2.MainActivity">
 
     <TextView
         android:id="@+id/display_text_view"

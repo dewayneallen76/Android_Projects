@@ -11,10 +11,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // PASTE CODE YOU WANT TO TEST HERE
 
-        int day1 = 15;
-        int day2 = 22;
-        int day3 = 18;
-        display(6 / 3);
+        String firstName = "Lyla";
+        String lastName = "Fujiwara";
+        String contactInfo = firstName + " " + lastName;
+        contactInfo = "<" + lastName + "." + firstName + "@justjava.com>";
+        display(contactInfo);
     }
 
     /**
