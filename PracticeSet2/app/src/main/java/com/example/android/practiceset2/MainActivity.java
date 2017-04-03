@@ -3,7 +3,6 @@ package com.example.android.practiceset2;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -12,14 +11,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // PASTE CODE YOU WANT TO TEST HERE
 
-        int weekday = 5;
-        int weekend = 9;
-        int optimalHours = 7 * 8;
-
-        int actualHours = weekday;
-        actualHours = actualHours + weekend * 2;
-        int solution = optimalHours - actualHours;
-        display(solution);
+        int day1 = 15;
+        int day2 = 22;
+        int day3 = 18;
+        display(6 / 3);
     }
 
     /**
@@ -32,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
         t.setText(text);
     }
 
-    public void display(int i) {
+    public void display(int text) {
         TextView t = (TextView) findViewById(R.id.display_text_view);
-        t.setText(i + "");
+        t.setText(text + "");
     }
 
     public void display1(String text) {
