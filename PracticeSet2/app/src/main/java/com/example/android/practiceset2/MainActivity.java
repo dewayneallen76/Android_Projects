@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
         t.setText(text);
     }
 
-    public void display(int text) {
+    public void display(int i) {
         TextView t = (TextView) findViewById(R.id.display_text_view);
-        t.setText(text + "");
+        t.setText(i + "");
     }
 
     public void display1(String text) {
