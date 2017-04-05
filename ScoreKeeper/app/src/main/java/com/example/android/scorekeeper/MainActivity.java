@@ -40,7 +40,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team A by 1 point.
+     * Increase the score for Team A by 6 points (Touchdown).
+     */
+    public void addSixForTeamA(View v) {
+        scoreTeamA =scoreTeamA + 6;
+        displayForTeamA(scoreTeamA);
+    }
+
+    /**
+     * Increase the score for Team A by 1 point (Extra Point).
      */
     public void addOneForTeamA(View v) {
         scoreTeamA = scoreTeamA + 1;
@@ -48,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team A by 2 points.
+     * Increase the score for Team A by 2 points (Safety).
      */
     public void addTwoForTeamA(View v) {
         scoreTeamA = scoreTeamA + 2;
@@ -56,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team A by 3 points.
+     * Increase the score for Team A by 3 points (Field Goal).
      */
     public void addThreeForTeamA(View v) {
         scoreTeamA = scoreTeamA + 3;
@@ -70,8 +78,17 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
+
     /**
-     * Increase the score for Team B by 1 point.
+     * Increase the score for Team B by 6 points (Touchdown).
+     */
+    public void addSixForTeamB(View v) {
+        scoreTeamB =scoreTeamB + 6;
+        displayForTeamB(scoreTeamB);
+    }
+
+    /**
+     * Increase the score for Team B by 1 point (Extra Point).
      */
     public void addOneForTeamB(View v) {
         scoreTeamB = scoreTeamB + 1;
@@ -79,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team B by 2 points.
+     * Increase the score for Team B by 2 points (Safety).
      */
     public void addTwoForTeamB(View v) {
         scoreTeamB = scoreTeamB + 2;
@@ -87,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team B by 3 points.
+     * Increase the score for Team B by 3 points (Field Goal).
      */
     public void addThreeForTeamB(View v) {
         scoreTeamB = scoreTeamB + 3;
