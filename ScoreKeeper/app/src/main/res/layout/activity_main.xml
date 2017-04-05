@@ -43,17 +43,9 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="addThreeForTeamA"
-                android:text="+3 Points" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:onClick="addTwoForTeamA"
-                android:text="+2 Points" />
+                android:onClick="addSixForTeamA"
+                android:text="Touchdown"
+                android:textColor="#E0E0E0" />
 
             <Button
                 android:layout_width="match_parent"
@@ -62,7 +54,30 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addOneForTeamA"
-                android:text="Free Throw" />
+                android:text="Extra Point"
+                android:textColor="#E0E0E0" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addThreeForTeamA"
+                android:text="Field Goal"
+                android:textColor="#E0E0E0" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addTwoForTeamA"
+                android:text="Safety"
+                android:textColor="#E0E0E0" />
+
+
         </LinearLayout>
 
         <View
@@ -105,17 +120,9 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="addThreeForTeamB"
-                android:text="+3 Points" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:onClick="addTwoForTeamB"
-                android:text="+2 Points" />
+                android:onClick="addSixForTeamB"
+                android:text="Touchdown"
+                android:textColor="#E0E0E0" />
 
             <Button
                 android:layout_width="match_parent"
@@ -124,7 +131,29 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addOneForTeamB"
-                android:text="Free Throw" />
+                android:text="Extra Point"
+                android:textColor="#E0E0E0" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addThreeForTeamB"
+                android:text="Field Goal"
+                android:textColor="#E0E0E0" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addTwoForTeamB"
+                android:text="Safety"
+                android:textColor="#E0E0E0" />
+
 
         </LinearLayout>
     </LinearLayout>
@@ -138,5 +167,6 @@
         android:layout_marginLeft="22dp"
         android:layout_marginRight="22dp"
         android:onClick="resetScore"
-        android:text="RESET" />
+        android:text="RESET"
+        android:textColor="#E0E0E0" />
 </RelativeLayout>
