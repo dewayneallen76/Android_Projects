@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        // Gets the name entered in the edit text view 
+        // Gets the name entered in the edit text view
         EditText nameField = (EditText)findViewById(R.id.name_field);
         String name = nameField.getText().toString();
 
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox chocolateToppingCheckbox = (CheckBox) findViewById(R.id.chocolate_topping_checkbox);
         boolean hasChocolateTopping = chocolateToppingCheckbox.isChecked();
 
-        int price = calculatePrice();
+        int price = calculatePrice(hasWhippedCream, hasChocolateTopping);
         String priceMessage = createOrderSummary(name, price, hasWhippedCream, hasChocolateTopping);
         displayMessage(priceMessage);
     }
@@ -50,10 +50,22 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Calculates the price of the order.
      *
+     * @param hasWhippedCream is whether the user has selected whipped cream checkbox
+     * @param hasChocolateTopping is whether the user has selected chocolate topping checkbox
      * @return total price
      */
-    private int calculatePrice() {
-        return quantity * 5;
+    private int calculatePrice(boolean hasWhippedCream, boolean hasChocolateTopping) {
+        int basePrice = 5;
+        // Add $1 if the user wants whipped cream
+        if(hasWhippedCream == true) {
+            basePrice = basePrice + 1;
+        }
+        // Add $2 if the user wants chocolate topping
+        if (hasChocolateTopping == true ) {
+            basePrice = basePrice + 2;
+        }
+        //Calculate the total price by multiplying the basePrice with quantity
+        return quantity * basePrice;
     }
 
     /**
