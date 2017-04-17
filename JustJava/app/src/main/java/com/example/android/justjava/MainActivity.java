@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         if(addWhippedCream == true) {
             priceMessage += "\nAdd whipped cream $1.00";
         }
-        //Will display message if chocolate topping has been added 
+        //Will display message if chocolate topping has been added
         if(addChocolateTopping == true) {
             priceMessage += "\nAdd chocolate topping $2.00";
         }
