@@ -90,8 +90,12 @@ public class MainActivity extends AppCompatActivity {
 
     private String createOrderSummary(String name, int price, boolean addWhippedCream, boolean addChocolateTopping) {
         String priceMessage = "Name: " + name;
-        priceMessage += "\nAdd whipped cream?" + addWhippedCream;
-        priceMessage += "\nAdd chocolate topping?" + addChocolateTopping;
+        if(addWhippedCream == true) {
+            priceMessage += "\nAdd whipped cream $1.00";
+        }
+        if(addChocolateTopping == true) {
+            priceMessage += "\nAdd chocolate topping $2.00";
+        }
         priceMessage += "\nQuantity: " + quantity;
         priceMessage += "\nTotal $" + price;
         priceMessage += "\nThank You!";
