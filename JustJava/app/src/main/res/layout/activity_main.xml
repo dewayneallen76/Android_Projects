@@ -11,6 +11,13 @@
         android:paddingLeft="16dp"
         tools:context=".MainActivity">
 
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textCapWords"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
