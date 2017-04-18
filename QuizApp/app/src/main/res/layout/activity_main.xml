@@ -57,7 +57,7 @@
 
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="Question 2: In what year did greg popovich take over coaching duties?" />
+            android:text="Question 2: In what year did gregg popovich take over coaching duties?" />
 
         <RadioButton
             android:layout_width="wrap_content"
