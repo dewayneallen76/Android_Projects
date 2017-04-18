@@ -24,7 +24,6 @@
             android:text="@string/question_1" />
 
         <CheckBox
-            android:id=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
@@ -32,7 +31,6 @@
             android:textSize="16sp" />
 
         <CheckBox
-            android:id=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
@@ -40,7 +38,6 @@
             android:textSize="16sp" />
 
         <CheckBox
-            android:id=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
@@ -48,7 +45,6 @@
             android:textSize="16sp" />
 
         <CheckBox
-            android:id=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
@@ -135,7 +131,6 @@
             android:text="@string/question_5" />
 
         <EditText
-            android:id=""
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
@@ -155,7 +150,6 @@
                 android:textSize="24sp" />
 
             <TextView
-                android:id=""
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp"
