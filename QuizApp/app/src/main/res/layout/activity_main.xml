@@ -16,7 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name"
-            android:inputType="textCapWords" />
+            android:inputType="textCapWords"
+            android:layout_marginRight="16dp"/>
 
         <TextView
             style="@style/HeaderTextStyle"
@@ -103,9 +104,10 @@
             android:paddingLeft="24dp"
             android:text="United States Naval Academy"
             android:textSize="16sp" />
+
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="Question 4: In what year did the Spurs Coyote become the first mascot to be ejected?" />
+            android:text="Question 4: what year did the Spurs Coyote become the first mascot to be ejected?" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -127,6 +129,7 @@
             android:paddingLeft="24dp"
             android:text="2002"
             android:textSize="16sp" />
+
         <TextView
             style="@style/HeaderTextStyle"
             android:text="Question 5: Who do you think is the best spurs player of all time?" />
@@ -136,7 +139,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint=""
-            android:inputType="textCapWords" />
+            android:inputType="textCapWords"
+            android:layout_marginRight="16dp"/>
 
 
         <LinearLayout
