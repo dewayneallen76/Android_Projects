@@ -173,12 +173,13 @@
             android:orientation="horizontal">
 
             <Button
-                style="@style/ButtonStyle"
                 android:id="@+id/submit_button"
+                style="@style/ButtonStyle"
                 android:onClick=""
                 android:text="Submit" />
 
             <Button
+                android:id="@+id/reset_button"
                 style="@style/ButtonStyle"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="16dp"
