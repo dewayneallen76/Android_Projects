@@ -57,7 +57,7 @@
 
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="Question 2: In what year did gregg popovich take over coaching duties?" />
+            android:text="@string/question_2" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -82,7 +82,7 @@
 
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="Question 3: Where did David Robinson play basketball in college?" />
+            android:text="@string/question_3" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -107,7 +107,7 @@
 
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="Question 4: what year did the Spurs Coyote become the first mascot to be ejected?" />
+            android:text="@string/question_4" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -132,7 +132,7 @@
 
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="Question 5: Who do you think is the best spurs player of all time?" />
+            android:text="@string/question_5" />
 
         <EditText
             android:id=""
