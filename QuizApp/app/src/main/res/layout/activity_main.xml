@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingLeft="16dp"
         tools:context=".MainActivity">
@@ -21,7 +21,7 @@
 
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="Question 1: Which current spurs players won 5 NBA championships with tim duncan?" />
+            android:text="@string/question_1" />
 
         <CheckBox
             android:id=""
@@ -153,7 +153,7 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="16dp"
                 android:text="SCORE:"
-                android:textSize="24dp" />
+                android:textSize="24sp" />
 
             <TextView
                 android:id=""
