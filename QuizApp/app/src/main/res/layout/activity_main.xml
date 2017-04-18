@@ -20,43 +20,43 @@
 
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="Question 1: Which current spurs players became popular during the tim duncan era?" />
+            android:text="Question 1: Which current spurs players won 5 NBA championships with tim duncan?" />
 
         <CheckBox
-            android:id="@+id/whipped_cream_checkbox"
+            android:id=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="answer 1"
+            android:text="Tony Parker"
             android:textSize="16sp" />
 
         <CheckBox
-            android:id="@+id/chocolate_topping_checkbox"
+            android:id=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="answer 2"
+            android:text="Manu Ginobili"
             android:textSize="16sp" />
 
         <CheckBox
-            android:id="@+id/chocolate_topping_checkbox"
+            android:id=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="answer 3"
+            android:text="Lamarcus Aldridge"
             android:textSize="16sp" />
 
         <CheckBox
-            android:id="@+id/chocolate_topping_checkbox"
+            android:id=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="answer 4"
+            android:text="Kawhi Leonard"
             android:textSize="16sp" />
 
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="Question 2:" />
+            android:text="Question 2: In what year did greg popovich take over coaching duties?" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -81,12 +81,52 @@
 
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="Question 3:" />
+            android:text="Question 3: Where did David Robinson play basketball in college?" />
 
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="answer 1"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="answer 2"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="answer 3"
+            android:textSize="16sp" />
         <TextView
             style="@style/HeaderTextStyle"
-            android:text="Question 4:" />
+            android:text="Question 4: In what year did the Spurs Coyote become the first mascot to be ejected?" />
 
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="answer 1"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="answer 2"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="answer 3"
+            android:textSize="16sp" />
         <TextView
             style="@style/HeaderTextStyle"
             android:text="Question 5: Who do you think is the best spurs player of all time?" />
