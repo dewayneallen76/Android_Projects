@@ -62,21 +62,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="answer 1"
+            android:text="1996"
             android:textSize="16sp" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="answer 2"
+            android:text="1986"
             android:textSize="16sp" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="answer 3"
+            android:text="1999"
             android:textSize="16sp" />
 
         <TextView
@@ -87,21 +87,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="answer 1"
+            android:text="Notre Dame"
             android:textSize="16sp" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="answer 2"
+            android:text="United States Air Force Academy"
             android:textSize="16sp" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="answer 3"
+            android:text="United States Naval Academy"
             android:textSize="16sp" />
         <TextView
             style="@style/HeaderTextStyle"
@@ -111,21 +111,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="answer 1"
+            android:text="2004"
             android:textSize="16sp" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="answer 2"
+            android:text="2005"
             android:textSize="16sp" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="answer 3"
+            android:text="2002"
             android:textSize="16sp" />
         <TextView
             style="@style/HeaderTextStyle"
