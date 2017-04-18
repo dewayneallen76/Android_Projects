@@ -138,7 +138,7 @@
             android:id=""
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint=""
+            android:hint="Best Player"
             android:inputType="textCapWords"
             android:layout_marginRight="16dp"/>
 
@@ -151,7 +151,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SCORE:" />
+                android:paddingTop="16dp"
+                android:text="SCORE:"
+                android:textSize="24dp"/>
 
             <TextView
                 android:id=""
@@ -165,20 +167,29 @@
 
         </LinearLayout>
 
-
-        <Button
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:onClick=""
-            android:text="Submit" />
+            android:orientation="horizontal">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:onClick=""
-            android:text="Reset Quiz" />
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick=""
+                android:text="Submit" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick=""
+                android:text="Reset Quiz"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                />
+        </RelativeLayout>
 
     </LinearLayout>
 </ScrollView>
