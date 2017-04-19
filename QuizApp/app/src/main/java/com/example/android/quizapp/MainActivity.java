@@ -3,7 +3,9 @@ package com.example.android.quizapp;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,5 +21,38 @@ public class MainActivity extends AppCompatActivity {
         // Gets the name entered in the edit text view
         EditText nameField = (EditText) findViewById(R.id.name_field);
         String name = nameField.getText().toString();
+
+        //Checks to see if the correct checkboxes are selected for question 1
+        CheckBox checkbox1Question1 = (CheckBox) findViewById(R.id.checkbox1_question1);
+        boolean hasCheckbox1Question1 = checkbox1Question1.isChecked();
+
+        CheckBox checkbox2Question1 = (CheckBox) findViewById(R.id.checkbox2_question1);
+        boolean hasCheckbox2Question1 = checkbox2Question1.isChecked();
+
+    }
+
+    /**
+     * Calculates the price of the order.
+     *
+     * @param hasCheckbox1Question1 is whether the user has selected the correct answer checkbox
+     * @param hasCheckbox2Question1 is whether the user has selected the correct answer checkbox
+     * @return total score
+     */
+    private int calculateScore(boolean hasCheckbox1Question1, boolean hasCheckbox2Question1) {
+        // Check to see if the correct answers are selected for question 1
+        if(hasCheckbox1Question1  && hasCheckbox2Question1) {
+            score = score + 5;
+
+        }
+        //Calculate the total score
+        return displayScore(int totalScore)
+    }
+
+    /**
+     * This method displays the total score on the screen.
+     */
+    private void displayScore(int totalScore) {
+        TextView scoreTextView = (TextView) findViewById(R.id.score_text_view);
+        scoreTextView.setText("" + totalScore);
     }
 }
