@@ -125,7 +125,7 @@
             <Button
                 android:id="@+id/submit_button"
                 style="@style/ButtonStyle"
-                android:onClick=""
+                android:onClick="submitQuiz"
                 android:text="Submit" />
 
             <Button
