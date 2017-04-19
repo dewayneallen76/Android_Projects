@@ -22,22 +22,22 @@
 
         <CheckBox
             android:id="@+id/checkbox1_question1"
-            style="@style/AnswerTextStlye"
+            style="@style/AnswerTextStyle"
             android:text="Tony Parker" />
 
         <CheckBox
             android:id="@+id/checkbox2_question1"
-            style="@style/AnswerTextStlye"
+            style="@style/AnswerTextStyle"
             android:text="Manu Ginobili" />
 
         <CheckBox
             android:id="@+id/checkbox3_question1"
-            style="@style/AnswerTextStlye"
+            style="@style/AnswerTextStyle"
             android:text="Lamarcus Aldridge" />
 
         <CheckBox
             android:id="@+id/checkbox4_question1"
-            style="@style/AnswerTextStlye"
+            style="@style/AnswerTextStyle"
             android:text="Kawhi Leonard" />
 
         <TextView
@@ -45,15 +45,15 @@
             android:text="@string/question_2" />
 
         <RadioButton
-            style="@style/AnswerTextStlye"
+            style="@style/AnswerTextStyle"
             android:text="1996" />
 
         <RadioButton
-            style="@style/AnswerTextStlye"
+            style="@style/AnswerTextStyle"
             android:text="1986" />
 
         <RadioButton
-            style="@style/AnswerTextStlye"
+            style="@style/AnswerTextStyle"
             android:text="1999" />
 
         <TextView
@@ -61,15 +61,15 @@
             android:text="@string/question_3" />
 
         <RadioButton
-            style="@style/AnswerTextStlye"
+            style="@style/AnswerTextStyle"
             android:text="Notre Dame" />
 
         <RadioButton
-            style="@style/AnswerTextStlye"
+            style="@style/AnswerTextStyle"
             android:text="United States Air Force Academy" />
 
         <RadioButton
-            style="@style/AnswerTextStlye"
+            style="@style/AnswerTextStyle"
             android:text="United States Naval Academy" />
 
         <TextView
@@ -77,15 +77,15 @@
             android:text="@string/question_4" />
 
         <RadioButton
-            style="@style/AnswerTextStlye"
+            style="@style/AnswerTextStyle"
             android:text="2004" />
 
         <RadioButton
-            style="@style/AnswerTextStlye"
+            style="@style/AnswerTextStyle"
             android:text="2005" />
 
         <RadioButton
-            style="@style/AnswerTextStlye"
+            style="@style/AnswerTextStyle"
             android:text="2002" />
 
         <TextView
