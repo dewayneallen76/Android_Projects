@@ -46,9 +46,8 @@ public class MainActivity extends AppCompatActivity {
      */
     public int calculateScore(boolean hasCheckbox1Question1, boolean hasCheckbox2Question1) {
         // Check to see if the correct answers are selected for question 1
-        if(hasCheckbox1Question1  && hasCheckbox2Question1) {
+        if(hasCheckbox1Question1 && hasCheckbox2Question1) {
             score = score + 5;
-
         }
         return score;
     }
