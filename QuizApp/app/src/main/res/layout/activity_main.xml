@@ -36,92 +36,63 @@
             android:text="Lamarcus Aldridge" />
 
         <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="Kawhi Leonard"
-            android:textSize="16sp" />
+            style="@style/AnswerTextStlye"
+            android:text="Kawhi Leonard" />
 
         <TextView
             style="@style/HeaderTextStyle"
             android:text="@string/question_2" />
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="1996"
-            android:textSize="16sp" />
+            style="@style/AnswerTextStlye"
+            android:text="1996" />
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="1986"
-            android:textSize="16sp" />
+            style="@style/AnswerTextStlye"
+            android:text="1986" />
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="1999"
-            android:textSize="16sp" />
+            style="@style/AnswerTextStlye"
+            android:text="1999" />
 
         <TextView
             style="@style/HeaderTextStyle"
             android:text="@string/question_3" />
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="Notre Dame"
-            android:textSize="16sp" />
+            style="@style/AnswerTextStlye"
+            android:text="Notre Dame" />
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="United States Air Force Academy"
-            android:textSize="16sp" />
+            style="@style/AnswerTextStlye"
+            android:text="United States Air Force Academy" />
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="United States Naval Academy"
-            android:textSize="16sp" />
+            style="@style/AnswerTextStlye"
+            android:text="United States Naval Academy" />
 
         <TextView
             style="@style/HeaderTextStyle"
             android:text="@string/question_4" />
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="2004"
-            android:textSize="16sp" />
+            style="@style/AnswerTextStlye"
+            android:text="2004" />
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="2005"
-            android:textSize="16sp" />
+            style="@style/AnswerTextStlye"
+            android:text="2005" />
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="2002"
-            android:textSize="16sp" />
+            style="@style/AnswerTextStlye"
+            android:text="2002" />
 
         <TextView
             style="@style/HeaderTextStyle"
             android:text="@string/question_5" />
 
         <EditText
+            android:id="@+id/best_player_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
