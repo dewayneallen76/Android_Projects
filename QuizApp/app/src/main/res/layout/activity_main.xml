@@ -22,8 +22,7 @@
         <TextView
             style="@style/HeaderTextStyle"
             android:text="@string/question_1" />
-
-
+        
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
