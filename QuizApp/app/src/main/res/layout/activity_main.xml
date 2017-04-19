@@ -12,12 +12,9 @@
         tools:context=".MainActivity">
 
         <EditText
+            style="@style/EditTextStyle"
             android:id="@+id/name_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="16dp"
-            android:hint="Name"
-            android:inputType="textCapWords" />
+            android:hint="Name" />
 
         <TextView
             style="@style/HeaderTextStyle"
@@ -92,12 +89,9 @@
             android:text="@string/question_5" />
 
         <EditText
+            style="@style/EditTextStyle"
             android:id="@+id/best_player_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="16dp"
-            android:hint="Best Player"
-            android:inputType="textCapWords" />
+            android:hint="Best Player" />
 
         <LinearLayout
             android:layout_width="match_parent"
