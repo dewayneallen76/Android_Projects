@@ -34,4 +34,11 @@
         <item name="android:paddingLeft">24dp</item>
         <item name="android:textSize">16sp</item>
     </style>
+    <!-- Style for EditText -->
+    <style name="EditTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
 </resources>
