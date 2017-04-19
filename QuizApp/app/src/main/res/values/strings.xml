@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Spurs Quiz App</string>
     <!-- @string for question 1 -->
-    <string name="question_1">Which current Spurs players won 5 NBA championships with Tim Duncan?</string>
+    <string name="question_1">Which current Spurs players won 4 NBA championships with Tim Duncan?</string>
     <!-- @string for question 2 -->
     <string name="question_2">What year did Gregg Popovich take over coaching duties?</string>
     <!-- @string for question 3 -->
