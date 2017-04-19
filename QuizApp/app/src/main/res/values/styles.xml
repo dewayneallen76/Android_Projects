@@ -10,8 +10,8 @@
         <!-- Theme UI controls like checkboxes and text fields -->
         <item name="colorAccent">#9E9E9E</item>
     </style>
-    <!--Style for a header text view-->
-    <style name="HeaderTextStyle">
+    <!--Style for a question text view-->
+    <style name="QuestionTextStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:textSize">15sp</item>
