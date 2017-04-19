@@ -62,10 +62,15 @@
                 android:id="@+id/radio_button_3"
                 style="@style/AnswerTextStyle"
                 android:text="1999" />
+        </RadioGroup>
 
         <TextView
             style="@style/QuestionTextStyle"
             android:text="@string/question_3" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/radio_button_4"
@@ -82,9 +87,15 @@
                 style="@style/AnswerTextStyle"
                 android:text="United States Naval Academy" />
 
+        </RadioGroup>
+
         <TextView
             style="@style/QuestionTextStyle"
             android:text="@string/question_4" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/radio_button_7"
@@ -100,6 +111,7 @@
                 android:id="@+id/radio_button_9"
                 style="@style/AnswerTextStyle"
                 android:text="2002" />
+
         </RadioGroup>
 
         <TextView
