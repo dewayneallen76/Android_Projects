@@ -22,27 +22,18 @@
         <TextView
             style="@style/HeaderTextStyle"
             android:text="@string/question_1" />
-        
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="Tony Parker"
-            android:textSize="16sp" />
 
         <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="Manu Ginobili"
-            android:textSize="16sp" />
+            style="@style/AnswerTextStlye"
+            android:text="Tony Parker" />
 
         <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="Lamarcus Aldridge"
-            android:textSize="16sp" />
+            style="@style/AnswerTextStlye"
+            android:text="Manu Ginobili" />
+
+        <CheckBox
+            style="@style/AnswerTextStlye"
+            android:text="Lamarcus Aldridge" />
 
         <CheckBox
             android:layout_width="wrap_content"
