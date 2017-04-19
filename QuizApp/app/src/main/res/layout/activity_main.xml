@@ -49,59 +49,55 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/radiobutton1_question2"
+                android:id="@+id/radio_button_1"
                 style="@style/AnswerTextStyle"
                 android:text="1996" />
 
             <RadioButton
+                android:id="@+id/radio_button_2"
                 style="@style/AnswerTextStyle"
                 android:text="1986" />
 
             <RadioButton
+                android:id="@+id/radio_button_3"
                 style="@style/AnswerTextStyle"
                 android:text="1999" />
-
-        </RadioGroup>
 
         <TextView
             style="@style/QuestionTextStyle"
             android:text="@string/question_3" />
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
             <RadioButton
+                android:id="@+id/radio_button_4"
                 style="@style/AnswerTextStyle"
                 android:text="Notre Dame" />
 
             <RadioButton
+                android:id="@+id/radio_button_5"
                 style="@style/AnswerTextStyle"
                 android:text="United States Air Force Academy" />
 
             <RadioButton
+                android:id="@+id/radio_button_6"
                 style="@style/AnswerTextStyle"
                 android:text="United States Naval Academy" />
-
-        </RadioGroup>
 
         <TextView
             style="@style/QuestionTextStyle"
             android:text="@string/question_4" />
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
             <RadioButton
+                android:id="@+id/radio_button_7"
                 style="@style/AnswerTextStyle"
                 android:text="2004" />
 
             <RadioButton
+                android:id="@+id/radio_button_8"
                 style="@style/AnswerTextStyle"
                 android:text="2005" />
 
             <RadioButton
+                android:id="@+id/radio_button_9"
                 style="@style/AnswerTextStyle"
                 android:text="2002" />
         </RadioGroup>
