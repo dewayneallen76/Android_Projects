@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,12 +29,15 @@ public class MainActivity extends AppCompatActivity {
 
         CheckBox checkbox2Question1 = (CheckBox) findViewById(R.id.checkbox2_question1);
         boolean hasCheckbox2Question1 = checkbox2Question1.isChecked();
-        calculateScore(hasCheckbox1Question1, hasCheckbox2Question1);
+
+        RadioButton radiobutton1Question2 = (RadioButton) findViewById(R.id.radiobutton1_question2);
+        boolean hasRadioButton1 = radiobutton1Question2.isActivated();
 
         // Gets the name entered in the best player field
         EditText playerField = (EditText) findViewById(R.id.best_player_field);
         String bestPlayer = nameField.getText().toString();
 
+        calculateScore(hasCheckbox1Question1, hasCheckbox2Question1, hasRadioButton1);
         displayScore(score);
     }
 
@@ -44,9 +48,14 @@ public class MainActivity extends AppCompatActivity {
      * @param hasCheckbox2Question1 is whether the user has selected the correct answer checkbox
      * @return total score
      */
-    public int calculateScore(boolean hasCheckbox1Question1, boolean hasCheckbox2Question1) {
+    public int calculateScore(boolean hasCheckbox1Question1, boolean hasCheckbox2Question1, boolean hasRadioButton1) {
+        int totalScore;
         // Check to see if the correct answers are selected for question 1
-        if(hasCheckbox1Question1 && hasCheckbox2Question1) {
+//        if(hasCheckbox1Question1 && hasCheckbox2Question1) {
+//            score = score + 5;
+//        }
+
+        if(hasRadioButton1) {
             score = score + 5;
         }
         return score;
