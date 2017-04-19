@@ -21,18 +21,22 @@
             android:text="@string/question_1" />
 
         <CheckBox
+            android:id="@+id/checkbox1_question1"
             style="@style/AnswerTextStlye"
             android:text="Tony Parker" />
 
         <CheckBox
+            android:id="@+id/checkbox2_question1"
             style="@style/AnswerTextStlye"
             android:text="Manu Ginobili" />
 
         <CheckBox
+            android:id="@+id/checkbox3_question1"
             style="@style/AnswerTextStlye"
             android:text="Lamarcus Aldridge" />
 
         <CheckBox
+            android:id="@+id/checkbox4_question1"
             style="@style/AnswerTextStlye"
             android:text="Kawhi Leonard" />
 
