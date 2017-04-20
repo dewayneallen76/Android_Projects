@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    
 
     public void submitQuiz(View view) {
         // Gets the name entered in the edit text view
