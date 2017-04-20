@@ -129,9 +129,8 @@
             android:orientation="horizontal">
 
             <TextView
+                style="@style/QuizSummaryTextStyle"
                 android:id="@+id/quiz_summary_text_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text=""/>
 
         </LinearLayout>
