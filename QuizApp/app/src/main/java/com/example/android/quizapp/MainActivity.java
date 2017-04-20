@@ -7,6 +7,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
         String quizMessage = createQuizSummary(name, score, hasCheckbox1Question1,hasCheckbox2Question1, hasRadioButtonQuestion2,
          hasRadioButtonQuestion3, hasRadioButtonQuestion4, bestPlayer);
 
+        Toast.makeText(this, "You scored " + score + "points!", Toast.LENGTH_SHORT).show();
+
         displayMessage(quizMessage);
     }
 
@@ -104,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Display results and message
-     * @param message
+     * @param message that will be displayed in the quiz_summary_text_view
      */
     public void displayMessage(String message) {
         TextView quizSummaryTextView  = (TextView) findViewById(R.id.quiz_summary_text_view);
@@ -113,27 +116,38 @@ public class MainActivity extends AppCompatActivity {
 
     public String createQuizSummary(String name, int score, boolean hasCheckbox1Question1, boolean hasCheckbox2Question1, boolean hasRadioButtonQuestion2,
                                       boolean hasRadioButtonQuestion3, boolean hasRadioButtonQuestion4, String bestPlayer) {
-        String quizMessage = "Good job " + name + "!";
+        String quizMessage = "Good job " + name + "!\n";
         //Will display message
-        quizMessage += "\nYou scored " + score + " points!";
+        quizMessage += "\nYou scored " + score + " points!\n";
         if(hasCheckbox1Question1 && hasCheckbox2Question1) {
-            quizMessage += "\nTony Parker and Manu Ginobili were the two players to win four championships with Tim Duncan.";
+            quizMessage += "\nTony Parker and Manu Ginobili were the two players to win four championships with Tim Duncan. 10 points!";
+        } else if(hasCheckbox1Question1) {
+            quizMessage += "\nYou are half right Tony Parker was one of the players. 5 points!";
+        } else if(hasCheckbox2Question1) {
+            quizMessage += "\nYou are half right Manu Ginobili was of the the players. 5 points!";
+        } else {
+            quizMessage += "\nSorry, you scored 0 points for question 1.";
         }
         //Will display message
         if(hasRadioButtonQuestion2) {
-            quizMessage += "\nGregg Poppovich took over coaching the Spurs in 1996";
+            quizMessage += "\nGregg Poppovich took over coaching the Spurs in 1996. 10 points!";
+        } else {
+            quizMessage += "\nSorry, you scored 0 points for question 2.";
         }
         //Will display message
         if(hasRadioButtonQuestion3) {
-            quizMessage += "\nDavid Robinson played college basketball at the Naval Aacademy.";
+            quizMessage += "\nDavid Robinson played college basketball at the Naval Aacademy. 10 points!";
+        } else {
+            quizMessage += "\nSorry, you scored 0 points for question 3.";
         }
         //Will display message
         if(hasRadioButtonQuestion4) {
-            quizMessage += "\nThe Spurs coyote was the first mascot ejected from a game in 2005";
-
+            quizMessage += "\nThe Spurs coyote was the first mascot ejected from a game in 2005. 10 points!\n";
+        } else {
+            quizMessage += "\nSorry, you scored 0 points for question 4.\n";
         }
-        quizMessage += "\nYou chose " + bestPlayer + " as the best Spurs player ever. Good choice!";
-        quizMessage += "\nThanks for taking the Spurs quiz";
+        quizMessage += "\nYou chose " + bestPlayer + " as the best Spurs player ever. Good choice!\n";
+        quizMessage += "\nThanks for taking the Spurs quiz!";
 
         return quizMessage;
     }
