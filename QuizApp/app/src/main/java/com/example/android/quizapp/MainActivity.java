@@ -37,13 +37,14 @@ public class MainActivity extends AppCompatActivity {
         RadioButton radioButtonQuestion3 = (RadioButton) findViewById(R.id.radio_button_6);
         boolean hasRadioButtonQuestion3 = radioButtonQuestion3.isClickable();
 
-        RadioButton radioButtonQuestion4 =  
+        RadioButton radioButtonQuestion4 =  (RadioButton) findViewById(R.id.radio_button_8);
+        boolean hasRadioButtonQuestion4 = radioButtonQuestion4.isClickable();
 
         // Gets the name entered in the best player field
         EditText playerField = (EditText) findViewById(R.id.best_player_field);
         String bestPlayer = playerField.getText().toString();
 
-        calculateScore(hasCheckbox1Question1, hasCheckbox2Question1, hasRadioButtonQuestion2);
+        calculateScore(hasCheckbox1Question1, hasCheckbox2Question1, hasRadioButtonQuestion2, hasRadioButtonQuestion3, hasRadioButtonQuestion4);
         displayScore(score);
     }
 
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
      * @param hasCheckbox2Question1 is whether the user has selected the correct answer checkbox
      * @return total score
      */
-    public int calculateScore(boolean hasCheckbox1Question1, boolean hasCheckbox2Question1, boolean hasRadioButtonQuestion2) {
+    public int calculateScore(boolean hasCheckbox1Question1, boolean hasCheckbox2Question1, boolean hasRadioButtonQuestion2, boolean hasRadioButtonQuestion3, boolean hasRadioButtonQuestion4) {
         // Check to see if the correct answers are selected for question 1
         if(hasCheckbox1Question1 && hasCheckbox2Question1) {
             score = score + 5;
@@ -62,7 +63,12 @@ public class MainActivity extends AppCompatActivity {
         if(hasRadioButtonQuestion2) {
             score = score + 5;
         }
-
+        if(hasRadioButtonQuestion3) {
+            score = score + 5;
+        }
+        if(hasRadioButtonQuestion4) {
+            score = score + 5;
+        }
         return score;
     }
 
