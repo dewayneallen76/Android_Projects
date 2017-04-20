@@ -44,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
         EditText playerField = (EditText) findViewById(R.id.best_player_field);
         String bestPlayer = playerField.getText().toString();
 
-        calculateScore(hasCheckbox1Question1, hasCheckbox2Question1, hasRadioButtonQuestion2, hasRadioButtonQuestion3, hasRadioButtonQuestion4);
+        calculateScore(hasCheckbox1Question1, hasCheckbox2Question1, hasRadioButtonQuestion2,
+                        hasRadioButtonQuestion3, hasRadioButtonQuestion4);
         displayScore(score);
     }
 
@@ -78,5 +79,13 @@ public class MainActivity extends AppCompatActivity {
     public void displayScore(int totalScore) {
         TextView scoreTextView = (TextView) findViewById(R.id.score_text_view);
         scoreTextView.setText("" + totalScore);
+    }
+
+    /**
+     * This method resets the score to zero when clicking the reset button.
+     */
+    public void resetQuiz(View v) {
+        score = 0;
+        displayScore(score);
     }
 }
