@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    
+
 
     public void submitQuiz(View view) {
         // Gets the name entered in the edit text view
@@ -33,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
         RadioButton radioButtonQuestion2 = (RadioButton) findViewById(R.id.radio_button_1);
         boolean hasRadioButtonQuestion2 = radioButtonQuestion2.isClickable();
+
+        RadioButton radioButtonQuestion3 = (RadioButton) findViewById(R.id.radio_button_6);
+        boolean hasRadioButtonQuestion3 = radioButtonQuestion3.isClickable();
+
+        RadioButton radioButtonQuestion4 =  
 
         // Gets the name entered in the best player field
         EditText playerField = (EditText) findViewById(R.id.best_player_field);
