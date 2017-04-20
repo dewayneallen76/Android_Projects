@@ -77,21 +77,25 @@ public class MainActivity extends AppCompatActivity {
         } else if (hasCheckbox1Question1 || hasCheckbox2Question1){
             score = score + 5;
         }
+        // Check to see if the correct answer was selected for question 2
         if(hasRadioButtonQuestion2) {
             score = score + 10;
         }
+        // Check to see if the correct answer was selected for question 3
         if(hasRadioButtonQuestion3) {
             score = score + 10;
         }
+        // Check to see if the correct answer was selected for question 4
         if(hasRadioButtonQuestion4) {
             score = score + 10;
         }
+        // Returns the total score
         return score;
     }
 
 
     /**
-     * This method clears the app when clicking the reset button.
+     * This method resets the app when clicking the reset button.
      */
     public void resetQuiz(View v) {
         finish();
@@ -99,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *
+     * Display results and message
      * @param message
      */
     public void displayMessage(String message) {
