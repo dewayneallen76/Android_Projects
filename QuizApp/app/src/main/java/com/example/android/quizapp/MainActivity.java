@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Set variable for score with initial value of 0.
     int score = 0;
 
     @Override
@@ -18,7 +19,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-
+    /**
+     * User enters name, selects answers for questions, and provides input for the final question.
+     * When the user clicks the submit button the results will display on the screen.
+     * @param view displays to the quiz_summary_text view
+     */
     public void submitQuiz(View view) {
         // Gets the name entered in the edit text view
         EditText nameField = (EditText) findViewById(R.id.name_field);
@@ -59,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param hasCheckbox1Question1 is whether the user has selected the correct answer checkbox
      * @param hasCheckbox2Question1 is whether the user has selected the correct answer checkbox
+     * @param hasRadioButtonQuestion2 is whether the user has selected the correct answer radio button for question 2
+     * @param hasRadioButtonQuestion3 is whether the user has selected the correct answer radio button for question 3
+     * @param hasRadioButtonQuestion4 is whether the user has selected the correct answer radio button for question 4
      * @return total score
      */
     public int calculateScore(boolean hasCheckbox1Question1, boolean hasCheckbox2Question1, boolean hasRadioButtonQuestion2,
@@ -79,21 +87,18 @@ public class MainActivity extends AppCompatActivity {
         return score;
     }
 
+
     /**
-     * This method displays the total score on the screen.
+     * This method clears the results when clicking the reset button.
      */
-    public void displayScore(String createQuizSummary) {
-        TextView scoreTextView = (TextView) findViewById(R.id.score_text_view);
-        scoreTextView.setText(createQuizSummary);
+    public void resetQuiz(View v) {
+        displayMessage("");
     }
 
     /**
-     * This method resets the score to zero when clicking the reset button.
+     *
+     * @param message
      */
-//    public void resetQuiz(View v) {
-//        displayScore(score);
-//    }
-
     public void displayMessage(String message) {
         TextView quizSummaryTextView  = (TextView) findViewById(R.id.quiz_summary_text_view);
         quizSummaryTextView.setText(message);
@@ -101,22 +106,22 @@ public class MainActivity extends AppCompatActivity {
 
     public String createQuizSummary(String name, int score, boolean hasCheckbox1Question1, boolean hasCheckbox2Question1, boolean hasRadioButtonQuestion2,
                                       boolean hasRadioButtonQuestion3, boolean hasRadioButtonQuestion4, String bestPlayer) {
-        String quizMessage = "Name: " + name;
+        String quizMessage = "Good job " + name + "!";
         //Will display message
-        quizMessage += "\nYou scored " + score + "points!";
-        if(hasCheckbox1Question1 == true && hasCheckbox2Question1) {
+        quizMessage += "\nYou scored " + score + " points!";
+        if(hasCheckbox1Question1 && hasCheckbox2Question1) {
             quizMessage += "\nTony Parker and Manu Ginobili were the two players to win four championships with Tim Duncan.";
         }
         //Will display message
-        if(hasRadioButtonQuestion2 == true) {
+        if(hasRadioButtonQuestion2) {
             quizMessage += "\nGregg Poppovich took over coaching the Spurs in 1996";
         }
-        //
-        if(hasRadioButtonQuestion3 == true) {
+        //Will display message
+        if(hasRadioButtonQuestion3) {
             quizMessage += "\nDavid Robinson played college basketball at the Naval Aacademy.";
         }
-        //
-        if(hasRadioButtonQuestion4 == true) {
+        //Will display message
+        if(hasRadioButtonQuestion4) {
             quizMessage += "\nThe Spurs coyote was the first mascot ejected from a game in 2005";
 
         }
