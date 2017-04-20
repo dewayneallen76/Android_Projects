@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Spurs Quiz App</string>
     <!-- @string for question 1 -->
-    <string name="question_1">Which current Spurs players won 4 NBA championships with Tim Duncan?</string>
+    <string name="question_1">1. Which current Spurs players won 4 NBA championships with Tim Duncan?</string>
     <!-- @string for question 2 -->
-    <string name="question_2">What year did Gregg Popovich take over coaching duties?</string>
+    <string name="question_2">2. What year did Gregg Popovich take over coaching duties?</string>
     <!-- @string for question 3 -->
-    <string name="question_3">Where did David Robinson play basketball in college?</string>
+    <string name="question_3">3. Where did David Robinson play basketball in college?</string>
     <!-- @string for question 4 -->
-    <string name="question_4">What year did the Spurs Coyote become the first mascot to be ejected?</string>
+    <string name="question_4">4. What year did the Spurs Coyote become the first mascot to be ejected?</string>
     <!-- @string for question 5 -->
-    <string name="question_5">Who do you think is the best Spurs player of all time?</string>
+    <string name="question_5">5. Who do you think is the best Spurs player of all time?</string>
 </resources>
