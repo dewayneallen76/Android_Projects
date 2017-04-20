@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
         }
         //Will display message
         if(hasRadioButtonQuestion3) {
-            quizMessage += "\nDavid Robinson played college basketball at the Naval Aacademy. 10 points!";
+            quizMessage += "\nDavid Robinson played college basketball at the Naval Academy. 10 points!";
         } else {
             quizMessage += "\nSorry, you scored 0 points for question 3.";
         }
