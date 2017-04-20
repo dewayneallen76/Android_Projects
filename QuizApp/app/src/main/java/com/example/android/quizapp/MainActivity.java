@@ -32,13 +32,13 @@ public class MainActivity extends AppCompatActivity {
         boolean hasCheckbox2Question1 = checkbox2Question1.isChecked();
 
         RadioButton radioButtonQuestion2 = (RadioButton) findViewById(R.id.radio_button_1);
-        boolean hasRadioButtonQuestion2 = radioButtonQuestion2.isClickable();
+        boolean hasRadioButtonQuestion2 = radioButtonQuestion2.isChecked();
 
         RadioButton radioButtonQuestion3 = (RadioButton) findViewById(R.id.radio_button_6);
-        boolean hasRadioButtonQuestion3 = radioButtonQuestion3.isClickable();
+        boolean hasRadioButtonQuestion3 = radioButtonQuestion3.isChecked();
 
         RadioButton radioButtonQuestion4 =  (RadioButton) findViewById(R.id.radio_button_8);
-        boolean hasRadioButtonQuestion4 = radioButtonQuestion4.isClickable();
+        boolean hasRadioButtonQuestion4 = radioButtonQuestion4.isChecked();
 
         // Gets the name entered in the best player field
         EditText playerField = (EditText) findViewById(R.id.best_player_field);
