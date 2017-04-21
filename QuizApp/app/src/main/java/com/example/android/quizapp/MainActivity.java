@@ -54,19 +54,20 @@ public class MainActivity extends AppCompatActivity {
         boolean hasRadioButtonQuestion4 = radioButtonQuestion4.isChecked();
 
         // Gets the name entered in the best player field
-        EditText playerField = (EditText) findViewById(R.id.best_player_field);
-        String bestPlayer = playerField.getText().toString();
+        EditText playerField = (EditText) findViewById(R.id.nickname_player_field);
+        String hasNicknamePlayer = playerField.getText().toString();
 
         calculateScore(hasCheckbox1Question1, hasCheckbox2Question1, hasCheckbox3Question1, hasCheckbox4Question1,
-                        hasRadioButtonQuestion2, hasRadioButtonQuestion3, hasRadioButtonQuestion4);
+                        hasRadioButtonQuestion2, hasRadioButtonQuestion3, hasRadioButtonQuestion4, hasNicknamePlayer);
 
         String quizMessage = createQuizSummary(name, score, hasCheckbox1Question1, hasCheckbox2Question1, hasRadioButtonQuestion2,
-         hasRadioButtonQuestion3, hasRadioButtonQuestion4, bestPlayer);
+         hasRadioButtonQuestion3, hasRadioButtonQuestion4, hasNicknamePlayer);
 
         Toast.makeText(this, "You scored " + score + " points!", Toast.LENGTH_SHORT).show();
 
         displayMessage(quizMessage);
 
+        //Reset score to 0 to prevent score continuing to add when hitting Submit button
         score = 0;
     }
 
@@ -84,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public int calculateScore(boolean hasCheckbox1Question1, boolean hasCheckbox2Question1, boolean hasCheckbox3Question1,
                               boolean hasCheckbox4Question1, boolean hasRadioButtonQuestion2,
-                              boolean hasRadioButtonQuestion3, boolean hasRadioButtonQuestion4) {
+                              boolean hasRadioButtonQuestion3, boolean hasRadioButtonQuestion4, String hasNicknamePlayer) {
         // Check to see if the correct answers are selected for question 1
         if(hasCheckbox1Question1 && hasCheckbox2Question1 && !hasCheckbox3Question1 && !hasCheckbox4Question1) {
             score = score + 10;
@@ -101,6 +102,9 @@ public class MainActivity extends AppCompatActivity {
         }
         // Check to see if the correct answer was selected for question 4
         if(hasRadioButtonQuestion4) {
+            score = score + 10;
+        }
+        if(hasNicknamePlayer.equalsIgnoreCase("George Gervin") || hasNicknamePlayer.equalsIgnoreCase("Gervin")) {
             score = score + 10;
         }
         // Returns the total score
@@ -156,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
         if(hasRadioButtonQuestion4) {
             quizMessage += "\nThe Spurs coyote was the first mascot ejected from a game in 2005. 10 points!\n";
         } else {
-            quizMessage += "\nSorry, you scored 0 points for question 4.\n";
+            quizMessage += "\nSorry, you scored 0 points for question 4.";
         }
         quizMessage += "\nYou chose " + bestPlayer + " as the best Spurs player ever. Good choice!\n";
         quizMessage += "\nThanks for taking the Spurs quiz!";
