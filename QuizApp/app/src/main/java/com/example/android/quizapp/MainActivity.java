@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         String bestPlayer = playerField.getText().toString();
 
         calculateScore(hasCheckbox1Question1, hasCheckbox2Question1, hasCheckbox3Question1, hasCheckbox4Question1,
-                        hasRadioButtonQuestion3, hasRadioButtonQuestion4);
+                        hasRadioButtonQuestion2, hasRadioButtonQuestion3, hasRadioButtonQuestion4);
 
         String quizMessage = createQuizSummary(name, score, hasCheckbox1Question1, hasCheckbox2Question1, hasRadioButtonQuestion2,
          hasRadioButtonQuestion3, hasRadioButtonQuestion4, bestPlayer);
@@ -75,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param hasCheckbox1Question1 is whether the user has selected the correct answer checkbox
      * @param hasCheckbox2Question1 is whether the user has selected the correct answer checkbox
+     * @param hasCheckbox3Question1 is whether the user has selected an incorrect checkbox
+     * @param hasCheckbox4Question1 is whether the user has selected and incorrect checkbox
      * @param hasRadioButtonQuestion2 is whether the user has selected the correct answer radio button for question 2
      * @param hasRadioButtonQuestion3 is whether the user has selected the correct answer radio button for question 3
      * @param hasRadioButtonQuestion4 is whether the user has selected the correct answer radio button for question 4
@@ -86,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         // Check to see if the correct answers are selected for question 1
         if(hasCheckbox1Question1 && hasCheckbox2Question1 && !hasCheckbox3Question1 && !hasCheckbox4Question1) {
             score = score + 10;
-        } else if (hasCheckbox1Question1 || hasCheckbox2Question1){
+        } else if (hasCheckbox1Question1 || hasCheckbox2Question1 && hasCheckbox3Question1 || hasCheckbox4Question1){
             score = score + 5;
         }
         // Check to see if the correct answer was selected for question 2
