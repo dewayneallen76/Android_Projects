@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
      * @param hasRadioButtonQuestion2 is whether the user has selected the correct answer radio button for question 2
      * @param hasRadioButtonQuestion3 is whether the user has selected the correct answer radio button for question 3
      * @param hasRadioButtonQuestion4 is whether the user has selected the correct answer radio button for question 4
-     * @param hasNicknamePlayer compares the input text with a value and scores if correct                                
+     * @param hasNicknamePlayer compares the input text with a value and scores if correct
      * @return total score
      */
     public int calculateScore(boolean hasCheckbox1Question1, boolean hasCheckbox2Question1, boolean hasCheckbox3Question1,
