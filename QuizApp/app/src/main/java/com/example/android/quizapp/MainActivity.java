@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
      * @param hasRadioButtonQuestion2 is whether the user has selected the correct answer radio button for question 2
      * @param hasRadioButtonQuestion3 is whether the user has selected the correct answer radio button for question 3
      * @param hasRadioButtonQuestion4 is whether the user has selected the correct answer radio button for question 4
+     * @param hasNicknamePlayer compares the input text with a value and scores if correct                                
      * @return total score
      */
     public int calculateScore(boolean hasCheckbox1Question1, boolean hasCheckbox2Question1, boolean hasCheckbox3Question1,
@@ -132,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
 
     public String createQuizSummary(String name, int score, boolean hasCheckbox1Question1, boolean hasCheckbox2Question1, boolean hasRadioButtonQuestion2,
                                       boolean hasRadioButtonQuestion3, boolean hasRadioButtonQuestion4, String hasNicknamePlayer) {
-        String quizMessage = "Good job " + name + "!\n";
+        String quizMessage = "Good Job " + name + "!\n";
         //Will display message
         quizMessage += "\nYou scored " + score + " points!\n";
         if(hasCheckbox1Question1 && hasCheckbox2Question1) {
@@ -140,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
         } else if(hasCheckbox1Question1) {
             quizMessage += "\nYou are half right Tony Parker was one of the players. 5 points!";
         } else if(hasCheckbox2Question1) {
-            quizMessage += "\nYou are half right Manu Ginobili was of the the players. 5 points!";
+            quizMessage += "\nYou are half right Manu Ginobili was one of the the players. 5 points!";
         } else {
             quizMessage += "\nSorry, you scored 0 points for question 1.";
         }
@@ -158,11 +159,18 @@ public class MainActivity extends AppCompatActivity {
         }
         //Will display message
         if(hasRadioButtonQuestion4) {
-            quizMessage += "\nThe Spurs coyote was the first mascot ejected from a game in 2005. 10 points!\n";
+            quizMessage += "\nThe Spurs coyote was the first mascot ejected from a game in 2005. 10 points!";
         } else {
             quizMessage += "\nSorry, you scored 0 points for question 4.";
         }
-        quizMessage += "\n" + hasNicknamePlayer + " as the best Spurs player ever. Good choice!\n";
+        if(hasNicknamePlayer.equalsIgnoreCase("George Gervin")) {
+            quizMessage += "\n" + hasNicknamePlayer + " was the Spur known as the Iceman. 10 points!\n";
+        } else if (hasNicknamePlayer.equalsIgnoreCase("Gervin")) {
+            quizMessage += "\n George Gervin was the Spur known as the Iceman. 10 points!";
+        } else {
+            quizMessage += "\n" + hasNicknamePlayer + " was not known as the Iceman. You scored 0 points for question 5";
+        }
+
         quizMessage += "\nThanks for taking the Spurs quiz!";
 
         return quizMessage;
