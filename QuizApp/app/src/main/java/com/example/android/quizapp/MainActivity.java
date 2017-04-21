@@ -37,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkbox2Question1 = (CheckBox) findViewById(R.id.checkbox2_question1);
         boolean hasCheckbox2Question1 = checkbox2Question1.isChecked();
 
+        CheckBox checkbox3Question1 = (CheckBox) findViewById(R.id.checkbox3_question1);
+        boolean hasCheckbox3Question1 = checkbox3Question1.isChecked();
+
+        CheckBox checkbox4Question1 = (CheckBox) findViewById(R.id.checkbox4_question1);
+        boolean hasCheckbox4Question1 = checkbox4Question1.isChecked();
+
         //Checks to see if the correct answer for questions with radio buttons is selected
         RadioButton radioButtonQuestion2 = (RadioButton) findViewById(R.id.radio_button_1);
         boolean hasRadioButtonQuestion2 = radioButtonQuestion2.isChecked();
@@ -51,10 +57,10 @@ public class MainActivity extends AppCompatActivity {
         EditText playerField = (EditText) findViewById(R.id.best_player_field);
         String bestPlayer = playerField.getText().toString();
 
-        calculateScore(hasCheckbox1Question1, hasCheckbox2Question1, hasRadioButtonQuestion2,
+        calculateScore(hasCheckbox1Question1, hasCheckbox2Question1, hasCheckbox3Question1, hasCheckbox4Question1,
                         hasRadioButtonQuestion3, hasRadioButtonQuestion4);
 
-        String quizMessage = createQuizSummary(name, score, hasCheckbox1Question1,hasCheckbox2Question1, hasRadioButtonQuestion2,
+        String quizMessage = createQuizSummary(name, score, hasCheckbox1Question1, hasCheckbox2Question1, hasRadioButtonQuestion2,
          hasRadioButtonQuestion3, hasRadioButtonQuestion4, bestPlayer);
 
         Toast.makeText(this, "You scored " + score + " points!", Toast.LENGTH_SHORT).show();
@@ -74,10 +80,11 @@ public class MainActivity extends AppCompatActivity {
      * @param hasRadioButtonQuestion4 is whether the user has selected the correct answer radio button for question 4
      * @return total score
      */
-    public int calculateScore(boolean hasCheckbox1Question1, boolean hasCheckbox2Question1, boolean hasRadioButtonQuestion2,
+    public int calculateScore(boolean hasCheckbox1Question1, boolean hasCheckbox2Question1, boolean hasCheckbox3Question1,
+                              boolean hasCheckbox4Question1, boolean hasRadioButtonQuestion2,
                               boolean hasRadioButtonQuestion3, boolean hasRadioButtonQuestion4) {
         // Check to see if the correct answers are selected for question 1
-        if(hasCheckbox1Question1 && hasCheckbox2Question1) {
+        if(hasCheckbox1Question1 && hasCheckbox2Question1 && !hasCheckbox3Question1 && !hasCheckbox4Question1) {
             score = score + 10;
         } else if (hasCheckbox1Question1 || hasCheckbox2Question1){
             score = score + 5;
