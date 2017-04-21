@@ -90,8 +90,6 @@ public class MainActivity extends AppCompatActivity {
         // Check to see if the correct answers are selected for question 1
         if(hasCheckbox1Question1 && hasCheckbox2Question1 && !hasCheckbox3Question1 && !hasCheckbox4Question1) {
             score = score + 10;
-        } else if (hasCheckbox1Question1 || hasCheckbox2Question1 && hasCheckbox3Question1 || hasCheckbox4Question1){
-            score = score + 5;
         }
         // Check to see if the correct answer was selected for question 2
         if(hasRadioButtonQuestion2) {
@@ -138,10 +136,6 @@ public class MainActivity extends AppCompatActivity {
         quizMessage += "\nYou scored " + score + " points!\n";
         if(hasCheckbox1Question1 && hasCheckbox2Question1) {
             quizMessage += "\nTony Parker and Manu Ginobili were the two players to win four championships with Tim Duncan. 10 points!";
-        } else if(hasCheckbox1Question1) {
-            quizMessage += "\nYou are half right Tony Parker was one of the players. 5 points!";
-        } else if(hasCheckbox2Question1) {
-            quizMessage += "\nYou are half right Manu Ginobili was one of the the players. 5 points!";
         } else {
             quizMessage += "\nSorry, you scored 0 points for question 1.";
         }
