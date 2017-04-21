@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public String createQuizSummary(String name, int score, boolean hasCheckbox1Question1, boolean hasCheckbox2Question1, boolean hasRadioButtonQuestion2,
-                                      boolean hasRadioButtonQuestion3, boolean hasRadioButtonQuestion4, String bestPlayer) {
+                                      boolean hasRadioButtonQuestion3, boolean hasRadioButtonQuestion4, String hasNicknamePlayer) {
         String quizMessage = "Good job " + name + "!\n";
         //Will display message
         quizMessage += "\nYou scored " + score + " points!\n";
@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             quizMessage += "\nSorry, you scored 0 points for question 4.";
         }
-        quizMessage += "\nYou chose " + bestPlayer + " as the best Spurs player ever. Good choice!\n";
+        quizMessage += "\n" + hasNicknamePlayer + " as the best Spurs player ever. Good choice!\n";
         quizMessage += "\nThanks for taking the Spurs quiz!";
 
         return quizMessage;
