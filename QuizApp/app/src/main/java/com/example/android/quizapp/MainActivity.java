@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
         if(hasNicknamePlayer.equalsIgnoreCase("George Gervin")) {
             quizMessage += "\n" + hasNicknamePlayer + " was the Spur known as the Iceman. 10 points!\n";
         } else if (hasNicknamePlayer.equalsIgnoreCase("Gervin")) {
-            quizMessage += "\n George Gervin was the Spur known as the Iceman. 10 points!";
+            quizMessage += "\nGeorge Gervin was the Spur known as the Iceman. 10 points!";
         } else {
             quizMessage += "\n" + hasNicknamePlayer + " was not known as the Iceman. You scored 0 points for question 5";
         }
