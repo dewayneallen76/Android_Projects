@@ -57,9 +57,11 @@ public class MainActivity extends AppCompatActivity {
         String quizMessage = createQuizSummary(name, score, hasCheckbox1Question1,hasCheckbox2Question1, hasRadioButtonQuestion2,
          hasRadioButtonQuestion3, hasRadioButtonQuestion4, bestPlayer);
 
-        Toast.makeText(this, "You scored " + score + "points!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "You scored " + score + " points!", Toast.LENGTH_SHORT).show();
 
         displayMessage(quizMessage);
+
+        score = 0;
     }
 
     /**
@@ -104,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
         finish();
         startActivity(getIntent());
     }
+
 
     /**
      * Display results and message
