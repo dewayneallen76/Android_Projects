@@ -28,20 +28,17 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("ten");
 
         // Find the root view so that we can add child views to it
-        LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
-        // Initialize variable to keep track of the current index position
-        int index = 0;
-        // Keep looping until we've reached the end of the list (keep looping as long
-        // as the current index position is less than the length of the list)
-        while (index < words.size()) {
+        LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);
+
+        // as long as the current index position is less than the length of the list).// The index variable keeps track of our current position in the list and
+        // increments by 1 each time the code in the loop is executed.
+        for (int index = 0; index < words.size(); index++) {
             // Create a new text view
             TextView wordView = new TextView(this);
             // Set the text to be the word at the index
             wordView.setText(words.get(index));
             // Add this text as a child view to the root view
             rootView.addView(wordView);
-            // Increment the index value by 1
-            index++;
         }
     }
 }
