@@ -19,16 +19,14 @@ public class    ColorsActivity extends AppCompatActivity {
 
         // Array list with strings for numbers (english translation)
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one", "lutti"));
-        words.add(new Word("two", "otiiko"));
-        words.add(new Word("three", "tolookosu"));
-        words.add(new Word("four", "oyyisa"));
-        words.add(new Word("five", "massokka"));
-        words.add(new Word("six", "temmokka"));
-        words.add(new Word("seven", "kenekaku"));
-        words.add(new Word("eight", "kawinta"));
-        words.add(new Word("nine", "wo'e"));
-        words.add(new Word("ten", "na'aacha"));
+        words.add(new Word("red", "weṭeṭṭi"));
+        words.add(new Word("mustard yellow", "chiwiiṭә"));
+        words.add(new Word("dusty yellow", "ṭopiisә"));
+        words.add(new Word("green", "chokokki"));
+        words.add(new Word("brown", "ṭakaakki"));
+        words.add(new Word("gray", "ṭopoppi"));
+        words.add(new Word("black", "kululli"));
+        words.add(new Word("white", "kelelli"));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
