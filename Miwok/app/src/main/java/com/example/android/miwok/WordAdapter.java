@@ -61,7 +61,14 @@ public class WordAdapter extends ArrayAdapter<Word> {
         ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_icon);
         // Get the image resource ID from the current Word object and
         // set the image to iconView
-        iconView.setImageResource(currentWord.getImageResourceID());
+        if (currentWord.hasImage()) {
+            iconView.setImageResource(currentWord.getImageResourceID());
+            // Make the view visible if image is found for the word
+            iconView.setVisibility(View.VISIBLE);
+        } else {
+            // Otherwise hide the imageView
+            iconView.setVisibility(View.GONE);
+        }
 
         // Return the whole list item layout (containing 2 TextViews)
         // so that it can be shown in the ListView
