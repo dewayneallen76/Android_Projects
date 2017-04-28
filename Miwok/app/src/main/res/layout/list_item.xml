@@ -23,14 +23,12 @@
     <ImageView
         android:id="@+id/list_item_icon"
         android:layout_width="@dimen/list_item_height"
-        android:layout_height="@dimen/list_item_height"
-        android:layout_alignParentLeft="true"/>
+        android:layout_height="@dimen/list_item_height" />
 
     <LinearLayout
         android:id="@+id/text_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/category_numbers"
         android:orientation="vertical"
         android:paddingLeft="16dp">
 
@@ -42,8 +40,7 @@
             android:layout_weight="1"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
-            android:textStyle="bold"
-            tools:text="lutti"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/default_text_view"
@@ -52,7 +49,6 @@
             android:layout_weight="1"
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
-            tools:text="one"/>
+            android:textColor="@android:color/white" />
     </LinearLayout>
 </LinearLayout>
