@@ -10,7 +10,7 @@ public final class PetContract {
 
     private PetContract() {}
 
-    public static abstract class PetEntry implements BaseColumns {
+    public static final class PetEntry implements BaseColumns {
 
         public static final String TABLE_NAME = "pets";
 
