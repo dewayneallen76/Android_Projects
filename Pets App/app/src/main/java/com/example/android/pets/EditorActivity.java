@@ -105,6 +105,15 @@ public class EditorActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     *
+     * Get user Input from editor and save new pet into database.
+     */
+    private void insertPet() {
+
+        String nameString = mNameEditText.getText().toString().trim();
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu options from the res/menu/menu_editor.xml file.
@@ -119,7 +128,10 @@ public class EditorActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             // Respond to a click on the "Save" menu option
             case R.id.action_save:
-                // Do nothing for now
+                // Save pet to database.
+                insertPet();
+                // Exit activity
+                finish();   
                 return true;
             // Respond to a click on the "Delete" menu option
             case R.id.action_delete:
