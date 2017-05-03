@@ -40,14 +40,38 @@ public final class PetContract {
         /** The content URI to access the pet data in the provider */
         public static final Uri CONTENT_URI = Uri.withAppendedPath(BASE_CONTENT_URI, PATH_PETS);
 
-
+        // Name of database table for pets
         public static final String TABLE_NAME = "pets";
 
-
+        /**
+         * Unique ID number for the pet (only used in the database table).
+         * Type: INTEGER
+         */
         public static final String _ID = BaseColumns._ID;
+
+        /**
+         * Name of the pet
+         * Type: TEXT
+         */
         public static final String COLUMN_PET_NAME = "name";
+
+        /**
+         * Breed of the pet
+         * Type: TEXT
+         */
         public static final String COLUMN_PET_BREED = "breed";
+
+        /**
+         * Gender of the pet
+         * The possible values are {@link #GENDER_UNKNOWN} {@link #GENDER_MALE} {@link #GENDER_FEMALE}
+         * Type: Integer
+         */
         public static final String COLUMN_PET_GENDER = "gender";
+
+        /**
+         * Weight of the pet
+         * Type: INTEGER
+         */
         public static final String COLUMN_PET_WEIGHT = "weight";
 
         /**
