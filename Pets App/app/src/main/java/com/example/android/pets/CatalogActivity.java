@@ -108,6 +108,7 @@ public class CatalogActivity extends AppCompatActivity {
         // there are no values).
         // The third argument is the ContentValues object containing the info for Toto.
         long newRowId = db.insert(PetContract.PetEntry.TABLE_NAME, null, values);
+
     }
 
     @Override
