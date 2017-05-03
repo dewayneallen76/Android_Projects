@@ -37,6 +37,7 @@ public final class PetContract {
      * Each entry in the table represents a single pet.
      */
     public static final class PetEntry implements BaseColumns {
+
         /** The content URI to access the pet data in the provider */
         public static final Uri CONTENT_URI = Uri.withAppendedPath(BASE_CONTENT_URI, PATH_PETS);
 
