@@ -44,9 +44,17 @@ public class PetProvider extends ContentProvider {
         // The calls to addURI() go here, for all of the content URI patterns that the provider
         // should recognize. All paths added to the UriMatcher have a corresponding code to return
         // when a match is found.
-        // TODO: Add 2 content URIs to URI matcher
-        sUriMatcher.addURI("shelter", "pets", PETS);
-        sUriMatcher.addURI("shelter","pets/#", PET_ID);
+
+        /**
+         * The content URI of the form "content://com.example.android.pets/pets" will map to the
+         * integer code {@link #PETS}. This URI is used to provide access to MULTIPLE rows of the
+         * pets table.
+         */
+        sUriMatcher.addURI(PetContract.CONTENT_AUTHORITY, PetContract.PATH_PETS, PETS);
+        /**
+         * The content 
+         */
+        sUriMatcher.addURI(PetContract.CONTENT_AUTHORITY, PetContract.PATH_PETS + "/#", PET_ID);
     }
 
     /**
