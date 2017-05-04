@@ -35,7 +35,9 @@ import com.example.android.pets.data.PetDbHelper;
  */
 public class CatalogActivity extends AppCompatActivity {
 
-    /** Database helper that will provide us access to the database */
+    /**
+     * Database helper that will provide us access to the database
+     */
     private PetDbHelper mDbHelper;
 
     @Override
@@ -56,6 +58,7 @@ public class CatalogActivity extends AppCompatActivity {
         // and pass the context, which is the current activity.
         mDbHelper = new PetDbHelper(this);
     }
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -67,14 +70,10 @@ public class CatalogActivity extends AppCompatActivity {
      * the pets database.
      */
     private void displayDatabaseInfo() {
-        // To access our database, we instantiate our subclass of SQLiteOpenHelper
-        // and pass the context, which is the current activity.
-        PetDbHelper mDbHelper = new PetDbHelper(this);
 
-        // Create and/or open a database to read from it
-        SQLiteDatabase db = mDbHelper.getReadableDatabase();
-
-        String [] projection = {
+        // Define a projection that specifies which columns from the database you will actually
+        // use after the query.
+        String[] projection = {
                 PetContract.PetEntry._ID,
                 PetContract.PetEntry.COLUMN_PET_NAME,
                 PetContract.PetEntry.COLUMN_PET_BREED,
@@ -82,14 +81,16 @@ public class CatalogActivity extends AppCompatActivity {
                 PetContract.PetEntry.COLUMN_PET_WEIGHT
         };
 
-        Cursor cursor = db.query(
-                PetContract.PetEntry.TABLE_NAME,
-                projection,
-                null,
-                null,
-                null,
-                null,
-                null);
+        /**
+         * Perform a query on the provider using the ContentResolver.
+         * Use the {@link PetEntry#CONTENT_URI} to access the pet data.
+         */
+        Cursor cursor = getContentResolver().query(
+                PetContract.PetEntry.CONTENT_URI,   // The content URI of the pets table
+                projection,                         // The columns to return for each row
+                null,                               // Selection criteria
+                null,                               // Selection criteria
+                null);                              // The sort order for the returned rows.
 
         TextView displayView = (TextView) findViewById(R.id.text_view_pet);
 
@@ -143,7 +144,7 @@ public class CatalogActivity extends AppCompatActivity {
      */
     private void insertPet() {
         //Gets the database in write mode.
-        SQLiteDatabase db= mDbHelper.getWritableDatabase();
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
 
         //Create content values object where column names are the keys,
         //and Toto's pet attributes are the values.
