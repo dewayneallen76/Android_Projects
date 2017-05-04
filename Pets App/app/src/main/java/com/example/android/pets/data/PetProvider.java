@@ -52,7 +52,10 @@ public class PetProvider extends ContentProvider {
          */
         sUriMatcher.addURI(PetContract.CONTENT_AUTHORITY, PetContract.PATH_PETS, PETS);
         /**
-         * The content 
+         * The content URI of the form "content://com.example.android.pets/pets/#" will mapt to the
+         * integer code {@link #PET_ID}. This URI is used to provide access to an INDIVIDUAL row of
+         * the pets table.
+         * The # wildcard is used where # can be subsituted for an integer.
          */
         sUriMatcher.addURI(PetContract.CONTENT_AUTHORITY, PetContract.PATH_PETS + "/#", PET_ID);
     }
