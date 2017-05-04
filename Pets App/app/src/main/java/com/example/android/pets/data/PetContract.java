@@ -54,7 +54,7 @@ public final class PetContract {
 
         // Name of database table for pets
         public static final String TABLE_NAME = "pets";
-        
+
         /**
          * Unique ID number for the pet (only used in the database table).
          * Type: INTEGER
