@@ -10,9 +10,6 @@ import android.widget.TextView;
 
 import com.example.android.pets.data.PetContract;
 
-import static android.R.attr.name;
-import static android.R.attr.priority;
-
 /**
  * {@link PetCursorAdapter} is an adapter for a list or grid view
  * that uses a {@link Cursor} of pet data as its data source. This adapter knows
@@ -27,7 +24,7 @@ public class PetCursorAdapter extends CursorAdapter {
      * @param c       The cursor from which to get the data.
      */
     public PetCursorAdapter(Context context, Cursor c) {
-        super(context, c, 0 /* flags */);
+        super(context, c, 0);
     }
 
     /**
