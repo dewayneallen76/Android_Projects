@@ -25,6 +25,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.Menu;
@@ -283,6 +284,31 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * This method is called when the back button is pressed.
+     */
+    @Override
+    public void onBackPressed() {
+        // If the pet hasn't changed, continue with handling back button request.
+        if (!mPetHasChanged) {
+            super.onBackPressed();
+            return;
+        }
+
+        // Otherwise if there are unsaved changes, setup a dialog to warn the user.
+        // Create a click listener to handle the user confirming that changes should be discarded.
+        DialogInterface.OnClickListener discardButtonClickListener =
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // User clicked discard button, close the current activity.
+                        finish();
+                    }
+                };
+        // Show dialog that there were unsaved changes.
+        showUnsavedChangesDialog(discardButtonClickListener);
+    }
+
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle bundle) {
         // Since the editor shows all pet attributes, define a projection that contains
@@ -358,5 +384,35 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         mBreedEditText.setText("");
         mWeightEditText.setText("");
         mGenderSpinner.setSelection(0); // Select unknown gender.
+    }
+
+    /**
+     * Show a dialog box that warns the user there are unsaved changes that will be lost if they
+     * continue.
+     *
+     * @param discardButtonClickListener is the click listener for what to do when the user
+     *                                   confirms that they want to discard their changes.
+     */
+    private void showUnsavedChangesDialog(
+            DialogInterface.OnClickListener discardButtonClickListener) {
+        // Create an AlertDialog.Builder and set the message, and click listeners for the negative
+        // and positive buttons in the dialog
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(R.string.unsaved_changes_dialog_msg);
+        builder.setPositiveButton(R.string.discard, discardButtonClickListener);
+        builder.setNegativeButton(R.string.keep_editing, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User clicked the "Keep editing" button, so dismiss the dialog
+                // and continue editiing the pet.
+                if (dialog != null) {
+                    dialog.dismiss();
+                }
+
+            }
+        });
+
+        // Create and show the alert dialog.
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 }
