@@ -44,7 +44,7 @@ public class Earthquake {
     }
 
     /** Returns the date of the earthquake */
-    public String getmDate() {
+    public String getDate() {
         return mDate;
     }
 
