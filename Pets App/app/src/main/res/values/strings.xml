@@ -74,6 +74,15 @@
     <!-- Toast message in editor when current pet has failed to be updated -->
     <string name="editor_update_pet_failed">Error with updating pet.</string>
 
+    <!-- Dialog message when user is leaving the editor but hasn't saved changes -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current pet -->
+    <string name="keep_editing">Keep editing</string>
+
     <!-- Title text for the empty view, which describes the empty dog house image -->
     <string name="empty_view_title_text">It\'s a bit lonely in here...</string>
 
