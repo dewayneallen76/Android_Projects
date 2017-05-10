@@ -48,7 +48,7 @@ public class Earthquake {
     }
 
     /** Returns the date of the earthquake */
-    public long getmTimeInMilliseconds() {
+    public long getTimeInMilliseconds() {
         return mTimeInMilliseconds;
     }
 
