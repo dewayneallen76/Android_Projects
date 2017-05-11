@@ -32,7 +32,7 @@ public class Earthquake {
      * @param location is the location of the earthquake.
      * @param timeInMilliseconds is the time in milliseconds (from the Epoch)
      *                           when the earthquake occurred.
-     *
+     * @param url is the website url to find more details about the earthquake.
      */
     public Earthquake(double magnitude, String location, long timeInMilliseconds, String url) {
         mMagnitude = magnitude;
